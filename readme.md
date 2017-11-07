@@ -54,6 +54,6 @@ tig
 
 ### プロジェクトを持ってくる
 ~~~
-git clone https://github.com/norioka/godgame.git
+git clone https://github.com/19960824munakata/GuraburuKyuenTool.git
 ~~~
 
