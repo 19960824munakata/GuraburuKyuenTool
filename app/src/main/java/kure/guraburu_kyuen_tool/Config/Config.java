@@ -1,4 +1,4 @@
-package Kure.guraburu_kyuen_tool.Config;
+package kure.guraburu_kyuen_tool.Config;
 
 /**
  * 設定変数やURLなどの変数を格納するのに利用

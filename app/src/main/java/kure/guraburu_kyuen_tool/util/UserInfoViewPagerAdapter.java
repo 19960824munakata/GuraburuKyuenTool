@@ -1,15 +1,15 @@
-package Kure.guraburu_kyuen_tool.util;
+package kure.guraburu_kyuen_tool.util;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import Kure.guraburu_kyuen_tool.Config.Config;
-import Kure.guraburu_kyuen_tool.OfficialPageFragment;
-import Kure.guraburu_kyuen_tool.OfficialTwitterFragment;
-import Kure.guraburu_kyuen_tool.ReliefFragment;
-import Kure.guraburu_kyuen_tool.SettingFragment;
-import Kure.guraburu_kyuen_tool.WikiFragment;
+import kure.guraburu_kyuen_tool.Config.Config;
+import kure.guraburu_kyuen_tool.OfficialPageFragment;
+import kure.guraburu_kyuen_tool.OfficialTwitterFragment;
+import kure.guraburu_kyuen_tool.ReliefFragment;
+import kure.guraburu_kyuen_tool.SettingFragment;
+import kure.guraburu_kyuen_tool.WikiFragment;
 
 /**
  * ページを切り替える際のAdapter

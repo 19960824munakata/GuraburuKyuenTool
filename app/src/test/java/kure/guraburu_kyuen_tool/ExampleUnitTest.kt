@@ -1,4 +1,4 @@
-package Kure.guraburu_kyuen_tool
+package kure.guraburu_kyuen_tool
 
 import org.junit.Test
 

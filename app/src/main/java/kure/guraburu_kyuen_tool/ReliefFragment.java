@@ -1,4 +1,4 @@
-package Kure.guraburu_kyuen_tool;
+package kure.guraburu_kyuen_tool;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -7,15 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * 設定、お問い合わせページ
+ * 救援ページ
  *
  * Created by yuuma on 2017/11/11.
  */
 
-public class SettingFragment extends Fragment {
+public class ReliefFragment extends Fragment{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_setting, container, false);
+        return inflater.inflate(R.layout.fragment_relief, container, false);
     }
 }
