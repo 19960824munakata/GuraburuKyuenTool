@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Guraburu_Kyuen_Tool</string>
+    <string name="relief">relief</string>
+    <string name="setting">setting</string>
+    <string name="wiki">wiki</string>
+    <string name="officialPage">officialPage</string>
+    <string name="officialTwtitter">officialTwitter</string>
+
 </resources>
