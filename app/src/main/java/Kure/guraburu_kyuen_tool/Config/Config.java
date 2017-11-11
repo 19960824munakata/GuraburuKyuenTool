@@ -9,4 +9,7 @@ package Kure.guraburu_kyuen_tool.Config;
 public class Config {
     // こんなかんじ？
     public final String USER_NAME = "hogehoge";
+
+    // 切り替えるページ数
+    public final static int PAGE_NUM = 5;
 }

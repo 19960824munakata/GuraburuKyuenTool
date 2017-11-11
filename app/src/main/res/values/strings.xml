@@ -3,7 +3,7 @@
     <string name="relief">relief</string>
     <string name="setting">setting</string>
     <string name="wiki">wiki</string>
-    <string name="officialPage">officialPage</string>
-    <string name="officialTwtitter">officialTwitter</string>
+    <string name="officialpage">officialPage</string>
+    <string name="officialtwtitter">officialTwitter</string>
 
 </resources>
