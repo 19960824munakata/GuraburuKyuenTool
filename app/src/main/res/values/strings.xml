@@ -5,5 +5,6 @@
     <string name="wiki">wiki</string>
     <string name="officialpage">officialPage</string>
     <string name="officialtwtitter">officialTwitter</string>
+    <string name="twitter_callback_url">kure.guraburu://twitter</string>
 
 </resources>

@@ -12,4 +12,5 @@ public class Config {
 
     // 切り替えるページ数
     public final static int PAGE_NUM = 5;
+    //
 }
