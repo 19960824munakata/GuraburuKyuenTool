@@ -8,44 +8,56 @@
     tools:context="kure.guraburu_kyuen_tool.MainActivity"
     android:orientation="vertical">
 
-    <LinearLayout
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/reliefButton"
-            android:text="@string/relief"/>
+        android:layout_height="wrap_content">
 
-        <Button
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/officialTwitterButton"
-            android:text="@string/officialtwtitter"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/officialPageButton"
-            android:text="@string/officialpage"/>
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/wikiButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/wiki" />
+            <Button
+                android:id="@+id/reliefButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:text="救援" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/settingButton"
-            android:text="@string/setting"/>
-    </LinearLayout>
+            <Button
+                android:id="@+id/officialTwitterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:text="公式\nTwitter" />
+
+            <Button
+                android:id="@+id/officialPageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="公式\nホームページ" />
+            android:textSize="20sp"
+
+            <Button
+                android:id="@+id/wikiButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="wiki" />
+
+            <Button
+                android:id="@+id/settingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="設定" />
+        </LinearLayout>
+
+
+
+
+    </HorizontalScrollView>
+
+
+
 
     <android.support.v4.view.ViewPager
         android:layout_width="match_parent"
