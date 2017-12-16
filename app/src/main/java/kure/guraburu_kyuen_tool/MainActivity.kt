@@ -12,13 +12,13 @@ import android.widget.Button
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     //todo メンバ変数はこういう宣言でいいのかな？
-    private var mPager : ViewPager? = null;
-    private var mAdapter: FragmentPagerAdapter? = null;
-    private var mCurrentPage = 0;
+    private var mPager : ViewPager? = null
+    private var mAdapter: FragmentPagerAdapter? = null
+    private var mCurrentPage = 0
     private val TAG = "HogeHoge"
 
     private val mPageButtonId = arrayOf(R.id.reliefButton,R.id.officialTwitterButton,
-            R.id.officialPageButton,R.id.wikiButton,R.id.settingButton);
+            R.id.officialPageButton,R.id.wikiButton,R.id.settingButton)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         try {
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             mPager = findViewById(R.id.pager)
 
             mAdapter = UserInfoViewPagerAdapter(supportFragmentManager)
-            mPager!!.setAdapter(mAdapter)
+            mPager!!.adapter = mAdapter
             mCurrentPage = 0
 
             // ボタンにリスナーを設定
@@ -49,31 +49,29 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         when (v.id) {
             mPageButtonId[0] -> {
                 mCurrentPage = 0
-                mPager!!.setCurrentItem(mCurrentPage)
+                mPager!!.currentItem = mCurrentPage
             }
             mPageButtonId[1] -> {
                 mCurrentPage = 1
-                mPager!!.setCurrentItem(mCurrentPage)
+                mPager!!.currentItem = mCurrentPage
             }
             mPageButtonId[2] -> {
                 mCurrentPage = 2
-                mPager!!.setCurrentItem(mCurrentPage)
+                mPager!!.currentItem = mCurrentPage
             }
             mPageButtonId[3] -> {
                 mCurrentPage = 3
-                mPager!!.setCurrentItem(mCurrentPage)
+                mPager!!.currentItem = mCurrentPage
             }
             mPageButtonId[4] -> {
                 mCurrentPage = 4
-                mPager!!.setCurrentItem(mCurrentPage)
+                mPager!!.currentItem = mCurrentPage
             }
             else -> {
                 mCurrentPage = 0
-                mPager!!.setCurrentItem(mCurrentPage)
+                mPager!!.currentItem = mCurrentPage
             }
         }
     }
-
-
 
 }
