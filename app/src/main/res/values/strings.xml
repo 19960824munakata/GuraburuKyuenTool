@@ -6,4 +6,16 @@
     <string name="officialpage">officialPage</string>
     <string name="officialtwtitter">officialTwitter</string>
 
+    <string-array name="type">
+        <item>マグナ星晶獣</item>
+        <item>旧召喚石マルチ</item>
+        <item>新召喚石マルチ</item>
+        <item>HL未満で頂点</item>
+        <item>4大天司</item>
+        <item>マグナHL</item>
+        <item>MAX6人HLバトル</item>
+        <item>高難易度HL</item>
+        <item>アルバハHL</item>
+    </string-array>
+
 </resources>
