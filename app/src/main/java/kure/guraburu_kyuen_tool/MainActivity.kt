@@ -1,5 +1,6 @@
 package kure.guraburu_kyuen_tool
 
+import android.app.Activity
 import kure.guraburu_kyuen_tool.util.UserInfoViewPagerAdapter
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -24,10 +25,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         try {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_main)
-
             mPager = findViewById(R.id.pager)
 
             mAdapter = UserInfoViewPagerAdapter(supportFragmentManager)
+            //レンダリングを保持する
+            mPager!!.offscreenPageLimit = 4
             mPager!!.adapter = mAdapter
             mCurrentPage = 0
 
@@ -37,6 +39,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 var button: Button = findViewById(item)
                 button.setOnClickListener(this)
             }
+
+            TutorialActivity.showIfNeeded(this, savedInstanceState)
+
+//            TutorialActivity.showForcibly(Activity())
         }
         catch (e: Throwable) {
             Log.e(TAG, "$e")
