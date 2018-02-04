@@ -20,6 +20,11 @@ public class TwitterManager{
         return instance;
     }
 
+    // OAuth認可
+    public static void getOAuth() {
+
+    }
+
 
 }
 

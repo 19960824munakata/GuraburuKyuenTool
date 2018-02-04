@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
 
                 <data android:host="twitter"
-                    android:scheme="kure.guraburu"/>
+                    android:scheme="kure"/>
             </intent-filter>
         </activity>
         <service android:name=".service.TestService"/>
